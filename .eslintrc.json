@@ -3,12 +3,18 @@
         "browser": true,
         "es2021": true
     },
-    "extends": "eslint:recommended",
+    "extends": "airbnb-base",
     "overrides": [
     ],
     "parserOptions": {
         "ecmaVersion": "latest"
     },
     "rules": {
+        "no-console": "off",
+        "no-alert": "off",
+        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+        "indent": ["error", 2, { "SwitchCase": 1 }],
+        "strict": ["off", "global"],
+        "newline-before-return": "error"
     }
 }
